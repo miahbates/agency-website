@@ -137,12 +137,12 @@ font-family: 'Poppins', sans-serif; */
   .fa-network-wired {
     font-size: 7rem;
   }
-  .home-page {
+  .homepage {
       margin-top: 100px;
       display: grid;
       grid-template-rows: 150px 150px 150px;
       grid-template-columns: 150px 150px 150px 150px;
-      border: solid 2px var(--color-four);
+      border: solid 2px purple;
       justify-content: center;
 
     }
