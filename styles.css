@@ -127,7 +127,12 @@ footer {
   margin-top: 20px;
 }
 
-/* Tablet and up */
+/* Font names */
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Tablet and up *
 @media screen and (min-width: 768px) {
   .fa-network-wired {
     font-size: 7rem;
