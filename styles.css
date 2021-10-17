@@ -137,7 +137,7 @@ footer {
       display: grid;
       grid-template-rows: 150px 150px 150px;
       grid-template-columns: 150px 150px 150px 150px;
-      /* border: solid 2px var(--color-four); */
+      border: solid 2px var(--color-four);
       justify-content: center;
 
     }
