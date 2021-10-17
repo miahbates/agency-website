@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,34 +7,65 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/288a4a188a.js" crossorigin="anonymous"></script>
   <script src="app.js" defer></script>
   <title>FACgency</title>
 </head>
-<body>
-  <header>
-      <nav>
-          <!-- button or ul with li? -->
-      </nav>
-  </header>
+<body> 
+  <div class="homepage">
+      <header>
+        <span class="fas fa-network-wired"></span>
+          <h1>FACgency</h1>
+          <p>We are a London based team of full-stack software developers, aiming to create your web and mobile applications to allow you to stand out in competitive markets.</p>
+      </header>
+ 
+    <nav>
+      <ul class="row">
+        <li data-tab-target="#about-us" class="tabs">About Us</li>
+        <li data-tab-target="#meet-team" class="tabs">Meet the team</li>
+        <li data-tab-target="#contact" class="tabs">Contact</li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+
+
+
+      <!-- <nav>
+          button or ul with li?
+      </nav> -->
+
+
+
   <main>
-      <!-- Home page -->
-      <section>
+        <!-- About us -->
+      <div class="tab-content">
+        <section id="about-us" data-tab-content>
+          <h2>About Us</h2>
+          <p>Stuff about us</p>
+        </section>
 
-      </section>
-      <!-- About us -->
-      <section>
 
-      </section>
-      <!-- Meet the team -->
-      <section>
+    
+        <!-- Meet the team -->
+        <section id="meet-team" data-tab-content>
+          <h2>Meet the team</h2>
+          <p>Stuff about meeting the team</p>
+        </section>
 
-      </section>
-      <!-- Contact -->
-      <section>
-          
-      </section>
+
+        <!-- Contact -->
+        <section id="contact" data-tab-content>
+          <h2>Contact</h2>
+          <p>Stuff about contact</p>
+        </section>
+      </div> 
+       
   </main>
+
+
   <footer>
+    <p>Stuff in footer</p>
   </footer>
 </body>
 </html>
