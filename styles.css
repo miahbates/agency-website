@@ -1,3 +1,8 @@
+/* Font names */
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 * {
   --color-one: #394648;
    /* #88498F; */
@@ -9,8 +14,8 @@
   /* #EE964B;#FF6542;  */
   --color-five: #F8E9E9;
   /* #564154; */
-  --heading-font: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --body-font: 'lara', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --heading-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --body-font: 'Lora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Mobile */
@@ -48,6 +53,9 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
  p {
@@ -67,8 +75,18 @@ h2 {
   align-items: center;
 }
 
-/* 
-colum class if needed
+.center {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stack > * {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+/* column class if needed
 
 .column {
   display: flex;
@@ -128,22 +146,49 @@ nav ul {
   cursor: pointer;
 }
 
+section {
+  background-color: var(--color-five);
+  text-align: justify;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+section p {
+  font-style: normal;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.facgency {
+  font-style: italic;
+}
+
+.cta {
+  font-weight: 700;
+  font-family: inherit;
+  color: inherit;
+  text-decoration-color: var(--color-four);
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 1px;
+}
+
+.cta:focus {
+  outline-color: var(--color-four);
+}
+
 footer {
   background-color: rgb(170, 213, 241);
   padding: 10px;
-  margin-top: 20px;
 }
 
-/* Font names */
-/* font-family: 'Lora', serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
+
 
 /* Tablet and up */
 @media screen and (min-width: 768px) {
   .fa-network-wired {
     font-size: 7rem;
   }
+
   .homepage {
       margin-top: 100px;
       display: grid;
@@ -152,5 +197,13 @@ font-family: 'Poppins', sans-serif; */
       border: solid 2px purple;
       justify-content: center;
 
+    }
+
+    .center {
+      max-width: 55vw;
+    }
+
+    section {
+      text-align: left;
     }
 }
