@@ -24,7 +24,7 @@ for (let i = 0; i < tabs.length; i++) {
 
 // add event listener to call-to-action
 // hide the current active tab
-// reveal the tab ithat the cta is targeting in it's data-tab-target attribute
+// reveal the tab that the cta is targeting in it's data-tab-target attribute
 cta.addEventListener('click', () => {
   const activeTab = document.querySelector('section.active');
   activeTab.classList.remove('active');
