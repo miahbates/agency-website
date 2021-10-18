@@ -15,8 +15,7 @@ for (let i = 0; i < tabs.length; i++) {
       tabContents[j].classList.remove('active');
     }
 
-    const showTab = document.querySelector(tabs[i].getAttribute('data-tab-target'))
-    showTab.classList.add('active')
-
+    const showTab = document.querySelector(tabs[i].getAttribute('data-tab-target'));
+    showTab.classList.add('active');
   })
 }
