@@ -1,6 +1,149 @@
+* {
+  --color-one: #394648;
+   /* #88498F; */
+  --color-two: #CBAC88;
+  /* #779FA1; */
+  --color-three: #EDB6A3;
+   /* #E0CBA8;   */ 
+  --color-four: #69995D;
+  /* #EE964B;#FF6542;  */
+  --color-five: #F8E9E9;
+  /* #564154; */
+}
+
 /* Mobile */
+html {
+  font-size: 62.5%;
+  background-color: #FAF9F6;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.fa-network-wired {
+  font-size: 4rem;
+  color:var(--color-one);
+  background-color: var(--color-three);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+h1 {
+  color: var(--color-five);
+  font-family: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  background-color: var(--color-one);
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+ p {
+  color: var(--color-one);
+  font-family: 'lara', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 20px 40px;
+  background-color: var(--color-five);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+colum class if needed
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+} */
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.homepage {
+  text-align: center;
+  background-image: url("images/homepage.jpg");
+  background-color: #FAF9F6;
+  height: 500px; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+[data-tab-content] {
+  display: none;
+}
+ 
+.active[data-tab-content] {
+  display:block;
+}
+
+.tabs{
+  color: var(--color-one);
+  border: rgba(248, 233, 233, 0.7) solid 3px;
+  background-color: rgba(248, 233, 233, 0.7);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  font-family: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.tabs:hover {
+  transform: scale(1.1); 
+  background-color: var(--color-one);
+  color: var(--color-five);
+  border: var(--color-three) 3px solid;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(170, 213, 241);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Font names */
+/* font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
 
 /* Tablet and up */
 @media screen and (min-width: 768px) {
-    
+  .fa-network-wired {
+    font-size: 7rem;
+  }
+  .homepage {
+      margin-top: 100px;
+      display: grid;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px 150px;
+      border: solid 2px purple;
+      justify-content: center;
+
+    }
 }
