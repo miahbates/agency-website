@@ -13,17 +13,17 @@
 
 /* Mobile */
 html {
-  font-size: 62.5%;
   background-color: #FAF9F6;
   margin: 0;
 }
 
 body {
   margin: 0;
+  font-size: 62.5%;
 }
 
 .fa-network-wired {
-  font-size: 4rem;
+  font-size: 2.8rem;
   color:var(--color-one);
   background-color: var(--color-three);
   padding: 10px;
@@ -35,7 +35,7 @@ h1 {
   color: var(--color-five);
   font-family: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: var(--color-one);
   width: 60%;
   margin: 20px auto;
@@ -45,7 +45,7 @@ h1 {
  p {
   color: var(--color-one);
   font-family: 'lara', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-style: italic;
   margin: 20px 40px;
   background-color: var(--color-five);
@@ -70,7 +70,7 @@ colum class if needed
 
 } */
 
-nav ul {
+button {
   margin: 0 auto;
   padding: 0;
 }
@@ -93,13 +93,13 @@ nav ul {
   display:block;
 }
 
-.tabs{
+.tabs {
   color: var(--color-one);
   border: rgba(248, 233, 233, 0.7) solid 3px;
   background-color: rgba(248, 233, 233, 0.7);
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,7 @@ nav ul {
   padding: 10px;
   text-align: center;
   font-family: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -132,7 +132,8 @@ footer {
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
 
-/* Tablet and up *
+
+/* Tablet and up */
 @media screen and (min-width: 768px) {
   .fa-network-wired {
     font-size: 7rem;
