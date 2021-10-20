@@ -4,7 +4,7 @@
   --color-two: #CBAC88;
   /* #779FA1; */
   --color-three: #EDB6A3;
-   /* #E0CBA8;   */ 
+   /* #E0CBA8;   */ p
   --color-four: #69995D;
   /* #EE964B;#FF6542;  */
   --color-five: #F8E9E9;
@@ -99,8 +99,8 @@ button {
   border: rgba(248, 233, 233, 0.7) solid 3px;
   background-color: rgba(248, 233, 233, 0.7);
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
