@@ -1,2 +1,4 @@
-# preA-week2-miahorian
-Agency website project for FAC23
+# FACgency website.
+
+A fictional digital agency offering software development. :sparkles:
+
