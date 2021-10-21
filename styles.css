@@ -9,7 +9,7 @@ font-family: 'Poppins', sans-serif; */
   --color-two: #CBAC88;
   /* #779FA1; */
   --color-three: #EDB6A3;
-   /* #E0CBA8;   */ 
+   /* #E0CBA8;   */
   --color-four: #69995D;
   /* #EE964B;#FF6542;  */
   --color-five: #F8E9E9;
@@ -63,7 +63,6 @@ h2 {
   font-family: 'lara', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.6rem;
   font-style: italic;
-  margin: 20px 40px;
   background-color: var(--color-five);
   border-radius: 5px;
   padding: 5px;
@@ -130,8 +129,8 @@ button {
   border: rgba(248, 233, 233, 0.7) solid 3px;
   background-color: rgba(248, 233, 233, 0.7);
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,34 +208,57 @@ footer {
 }
 
 /* Tablet and up */
+
 @media screen and (min-width: 768px) {
   .fa-network-wired {
-    font-size: 7rem;
+    font-size: 6rem;
+    margin: 0;
+
   }
 
-  .homepage {
-      margin-top: 100px;
-      display: grid;
-      grid-template-rows: 150px 150px 150px;
-      grid-template-columns: 150px 150px 150px 150px;
-      border: solid 2px purple;
-      justify-content: center;
+  h1 {
+    font-size: 5rem;
+    padding: 5px 20px;
+    margin: 0 0 0 20px;
+  }
 
-    }
+  .center {
+    max-width: 55vw;
+  }
 
-    .center {
-      max-width: 55vw;
-    }
+  section {
+    text-align: left;
+  }
 
-    section {
-      text-align: left;
-    }
+  .img-container.desktop {
+    display: block;
+  }
 
-    .img-container.desktop {
-      display: block;
-    }
+  .img-container.mobile {
+    display: none;
+  }
 
-    .img-container.mobile {
-      display: none;
-    }
-}
+  .subheading{
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1.8rem;
+    max-width:55vw;
+  }
+
+  .heading-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 55vw;
+    margin: 0 auto;
+  }
+
+  .tabs {
+    font-size: 2rem;
+    height: 110px;
+    width: 110px;
+    margin: 15px;
+  }
+  }
