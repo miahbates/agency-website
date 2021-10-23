@@ -58,7 +58,7 @@ h2 {
   text-align: center;
 }
 
- p {
+ .subheading {
   color: var(--color-one);
   font-family: 'lara', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.6rem;
@@ -66,6 +66,7 @@ h2 {
   background-color: var(--color-five);
   border-radius: 5px;
   padding: 5px;
+  box-shadow: rgba(108, 112, 116, 0.438) 0px 8px 24px;
 }
 
 .row {
@@ -110,7 +111,7 @@ button {
   text-align: center;
   background-image: url("images/homepage.jpg");
   background-color: #FAF9F6;
-  height: 500px; 
+  height: 85vh; 
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
@@ -120,8 +121,12 @@ button {
   display: none;
 }
  
-.active[data-tab-content] {
+/* .active[data-tab-content] {
   display:block;
+} */
+
+[data-active="true"] {
+  display: block;
 }
 
 .tabs {
@@ -242,7 +247,7 @@ footer {
     margin: 20px auto;
     padding: 20px;
     font-size: 1.8rem;
-    max-width:55vw;
+    max-width: 35vw;
   }
 
   .heading-flex {
@@ -261,4 +266,5 @@ footer {
     width: 110px;
     margin: 15px;
   }
+
   }
