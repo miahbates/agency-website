@@ -14,11 +14,15 @@ const cta = document.querySelector('.cta[data-tab-target]');
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener('click', () => {
     for (let j = 0; j < tabContents.length; j++) {
-      tabContents[j].classList.remove('active');
+      // tabContents[j].classList.remove('active');
+      tabContents[j].dataset.active = false;
     }
-
-    const showTab = document.querySelector(tabs[i].getAttribute('data-tab-target'));
-    showTab.classList.add('active');
+    // const showTab = document.querySelector(tabs[i].getAttribute('data-tab-target'));
+    // showTab.classList.add('active');
+     const target = document.querySelector(tabs[i].dataset.tabTarget);
+     console.log(tabs[i].dataset.tabTarget, target);
+     target.dataset.active = true;
+    //  showTab.add('active');
   })
 }
 
