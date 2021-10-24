@@ -53,7 +53,7 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  margin: 0;
+  margin: 0 15px;
   padding: 20px;
   text-align: center;
 }
@@ -212,6 +212,32 @@ footer {
   padding: 10px;
 }
 
+.meet-team-img {
+  border-radius: 5px;
+  max-width: 30vw;
+}
+
+#meet-team {
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  border-bottom: solid 2px var(--color-two);
+  display: inline-block;
+}
+
+
+#meet-team p {
+  font-family: var(--body-font);
+  text-align: justify;
+  margin: 0 auto;
+  width: 80vw;
+  padding: 10px;
+
+}
+
+
 /* Tablet and up */
 
 @media screen and (min-width: 768px) {
@@ -266,5 +292,23 @@ footer {
     width: 110px;
     margin: 15px;
   }
+
+  .row-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 55vw;
+  }
+
+  .meet-team-img {
+    max-height: 40vh;
+    margin-bottom: 30px;
+  }
+
+  #meet-team p {
+    margin: 0 40px;
+  }
+
 
   }
