@@ -83,6 +83,9 @@
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required>
 
+            <label for="tel">Phone:</label>
+            <input type="tel" name="phone-number" id="tel" required>
+
             <fieldset class="row">
               <legend>Book your free consultation</legend>
               <div>
@@ -92,7 +95,7 @@
               
               <div>
                 <label for="time">Time:</label>
-                <select id="time" name="consultation-time">
+                <select id="time" name="consultation-time" required>
                   <option value="10:00">10:00</option>
                   <option value="10:00">10:20</option>
                   <option value="10:00">10:40</option>
@@ -101,8 +104,12 @@
               </div>
             </fieldset>
 
-            <input type="submit" class="submit-btn">
+            <input type="submit" class="submit-btn" data-target="submit-msg">
           </form>
+          <div id="submit-msg" class="center-narrow" data-tab-content data-active>
+            <p class="tnx">Thank you</p>
+            <p class="consultation-info">Your free consultation is booked for</p>
+          </div>
         </section>
       </div> 
   </main>

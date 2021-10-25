@@ -259,6 +259,14 @@ select {
   font-family: inherit;
 }
 
+#submit-msg {
+  text-align: center;
+  background-color: var(--color-three);
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  border-radius: 15px;
+}
+
 /* footer */
 
 footer {
