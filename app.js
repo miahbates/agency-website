@@ -1,5 +1,5 @@
 // target attribute 'data tab target' to get an array of li's 
-const tabs = document.querySelectorAll('.tabs[data-tab-target]');
+const tabs = document.querySelectorAll('[data-tab-target]');
 
 // target attribute 'data tab content' on contents of tabs
 const tabContents = document.querySelectorAll('[data-tab-content]'); 
@@ -35,4 +35,25 @@ cta.addEventListener('click', () => {
   
   const showTab = document.querySelector(cta.getAttribute('data-tab-target'));
   showTab.classList.add('active');
+})
+
+// contact form
+const form = document.querySelector('form');
+// submit input
+const submitBtn = document.querySelector('.submit-btn');
+
+// submit message
+const submitMsg = document.querySelector('#submit-msg');
+
+console.log(form);
+console.log(submitBtn);
+console.log(submitMsg);
+
+// function to get all form inputs and return true if they are not empty 
+// call this function in the event listener before hiding the form 
+// function to get the date and time input values and display them in the submit message
+
+submitBtn.addEventListener('click', () => {
+  submitMsg.dataset.active = true;
+  form.setAttribute('data-tab-content', "");
 })
