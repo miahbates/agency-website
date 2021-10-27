@@ -85,15 +85,52 @@
 
 
         <!-- Contact -->
-        <section id="contact" data-tab-content>
-          <h2>Contact</h2>
-          <p>Stuff about contact</p>
+        <section id="contact" data-tab-content data-active="true">
+          <h2>Contact us</h2>
+          <form action="" method="GET" class="center column">
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" minlength="2" maxlength="10" name="first-name" required>
+
+            <label for="last-name">Last name</label>
+            <input id="last-name"type="text" minlength="2" maxlength="10" name="last-name" required>
+
+            <label for="company-name">Company name</label>
+            <input id="company-name"type="text" minlength="2" maxlength="10" name="company-name" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+
+            <label for="tel">Phone:</label>
+            <input type="tel" name="phone-number" id="tel" required>
+
+            <fieldset class="row">
+              <legend>Book your free consultation</legend>
+              <div>
+                <label for="date">Date:</label>
+                <input id="date" type="date" name="consultation-date" required>
+              </div>
+              
+              <div>
+                <label for="time">Time:</label>
+                <select id="time" name="consultation-time" required>
+                  <option value="10:00">10:00</option>
+                  <option value="10:00">10:20</option>
+                  <option value="10:00">10:40</option>
+                  <option value="10:00">11:00</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <input type="submit" class="submit-btn" data-target="#submit-msg">
+          </form>
+          <div id="submit-msg" class="center-narrow" data-tab-content>
+            <p class="tnx">Thank you</p>
+            <p class="consultation-info">Your free consultation is booked for:</p>
+            <p class="date-time-format"></p> 
+          </div>
         </section>
       </div> 
-       
   </main>
-
-
   <footer class="row">
     <div class="name-logo">
       <span class="fas fa-network-wired"></span>
