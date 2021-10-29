@@ -277,7 +277,7 @@ select {
 
 /* footer */
 
-footer {
+footer.row {
   background-color: rgb(170, 213, 241);
   box-sizing: border-box; 
   position: relative;
