@@ -36,39 +36,38 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   // save the form to submit later
   let form = e.target;
-  validateFormVals();
-  displaySubmitMsg();
-  // reveal submit message
-  submitMsg.dataset.active = true;
-  // hide form
-  form.setAttribute('data-tab-content', "");
-  // show form if 'contact' button is clicked again after submission
-  contactBtn.addEventListener('click', () => {
+  // check inputs are valid and if so display submit message 
+  if (validateFormVals()) {
+    createSubmitMsg();
+    // reveal submit message
+    submitMsg.dataset.active = true;
+    // hide form
+    form.setAttribute('data-tab-content', "");
+    // show form if 'contact' button is clicked again after submission
+    contactBtn.addEventListener('click', () => {
+    form.reset();
     form.removeAttribute('data-tab-content');
-  })
-  // submit form 
-  if (submitMsg.dataset.active){
-    form.submit();
+    })
   }
-  // reset form inputs 
-  form.reset();
 })
 
 // get all form inputs and return true if they are valid 
 function validateFormVals() {
   const inputs = document.querySelectorAll('input');
-  let isValid;
+  let invalid = 0;
+  // if an input's value is an empty string it will evaluate to falsey and is considered invalid
+  // increment invalid 
   for (let val of inputs) {
-    if (val.type !== 'submit') {
-      isValid = val.validity.valid; 
+    if (val.type !== 'submit' && !val.value) {
+      invalid += 1; 
     }
   }
-  console.log({isValid});
-  return isValid;
+  // returns true if all inputs are valid
+  return invalid === 0; 
 }
 
 // get the date and time input values and display them in the submit message
-function displaySubmitMsg() {
+function createSubmitMsg() {
   // get input values
   const name = document.querySelector('input[id = "first-name"]').value;
   const dateObj = document.querySelector('input[type = "date"]').valueAsDate;
