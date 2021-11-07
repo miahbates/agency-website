@@ -24,3 +24,7 @@ Information from the form doesn’t get submitted until the user clicks a button
 
 # Features: 
 * Tabbed UI which hide and show main elements of the page using data attributes.
+* Semantic HTML. 
+* Responsive deseign.
+* A form which requires the user to fill in all inputs. It displays a cofirmation message informing the user of the time of there consultation.
+* Footer which links to contact information - email, telephone.
