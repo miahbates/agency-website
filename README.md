@@ -7,6 +7,8 @@ A fictional digital agency offering software development service. The website pr
 
 *Check out the [live site here](https://fac-23.github.io/preA-week2-miahorian/)*!
 
+<img width="1416" alt="Screenshot 2022-06-25 at 21 09 14" src="https://user-images.githubusercontent.com/78933903/175789138-50d44fcf-018d-4339-9efe-caf4098aab99.png">
+
 ## User Stories 👥
 ### As a potential client, I want to:
 - [x] See information about each member of your team so that I can know who you are
